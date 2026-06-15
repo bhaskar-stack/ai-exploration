@@ -43,6 +43,12 @@ export default function Results({ answers, setAnswers, onRestart }: {
 
         <ShortlistView r={r} ctx={ctx} />
 
+        <div className="counsel-card">
+          <h3>Want a human to check this?</h3>
+          <p>A Leap counsellor can plan your applications and funding — free.</p>
+          <button className="btn btn-dark" style={{ width: '100%' }}>Book a free call</button>
+        </div>
+
         <div className="footer">
           Demo · matches from sample data.<br />
           <button onClick={onRestart} style={{ background: 'none', border: 'none', color: 'var(--teal)', fontWeight: 600, cursor: 'pointer', marginTop: 8, fontSize: 12.5 }}>
