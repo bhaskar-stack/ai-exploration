@@ -245,6 +245,7 @@ input[type=range]::-moz-range-thumb{width:26px;height:26px;border-radius:50%;bac
 
 .splash,.splash-m{flex:1;display:flex;flex-direction:column;align-items:center;text-align:center;padding:0 24px;position:relative}
 .splash-core{flex:1;display:flex;flex-direction:column;align-items:center;justify-content:center}
+.splash .splash-core{margin-top:-40px}
 .splash-m{padding:0 20px}
 .splash-m .splash-h1{font-size:32px;letter-spacing:-1px}
 .splash-m .splash-sub{font-size:15px}
