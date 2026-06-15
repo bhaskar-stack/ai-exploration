@@ -199,8 +199,8 @@ input[type=range]::-moz-range-thumb{width:26px;height:26px;border-radius:50%;bac
 .lockcard .emi b{font-family:'Manrope';font-weight:700;color:var(--amber);font-size:16px;display:block;line-height:1.1}
 .lockcard .emi span{font-size:10.5px;color:var(--ink-mute)}
 .ufine{font-size:11.5px;color:#9a7332;padding:0 17px 14px;line-height:1.4}
-.btn-unlock{width:100%;height:40px;min-height:40px;padding:0 16px;margin:0 17px 14px;width:calc(100% - 34px);border:none;border-radius:8px;background:#18181b;color:#fff;font-family:'Manrope',sans-serif;font-size:13px;font-weight:500;cursor:pointer}
-.btn-unlock:hover{background:#2f2f32}
+.btn-unlock{width:100%;height:40px;min-height:40px;padding:0 16px;margin:0 17px 14px;width:calc(100% - 34px);border:1.5px solid #d4d4d8;border-radius:8px;background:#fff;color:#18181b;font-family:'Manrope',sans-serif;font-size:13px;font-weight:500;cursor:pointer}
+.btn-unlock:hover{background:#f4f4f5}
 
 .counsel-card{background:#18181b;border-radius:12px;padding:16px;margin:16px 0}
 .counsel-card h3{font-size:15px;font-weight:600;color:#fff;margin-bottom:6px}

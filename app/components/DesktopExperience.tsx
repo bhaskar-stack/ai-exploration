@@ -147,7 +147,7 @@ function DeskAdjust({ answers, setAnswers, onRestart }: {
     <div className="lever">
       <button className="lever-h" onClick={() => setOpen(o => !o)}>
         <span>Adjust answers <span className="lever-hint">— updates live</span></span>
-        <span>{open ? '▾' : '▸'}</span>
+        <svg width="16" height="16" viewBox="0 0 20 20" fill="none" style={{ transform: open ? 'rotate(180deg)' : 'rotate(0deg)', transition: 'transform 0.2s' }}><path d="M5 7.5L10 12.5L15 7.5" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round"/></svg>
       </button>
       {open && (
         <div className="lever-body">
@@ -333,7 +333,7 @@ export default function DesktopExperience({ answers, setAnswers }: {
           <div className="desk-canvas">
             <div className="canvas-topbar">
               <span>{done ? 'Personalized recommendation' : 'Profile evaluation'}</span>
-              <span className="canvas-live"><span className="livedot" />LIVE</span>
+              {!done && <span className="canvas-live"><span className="livedot" />LIVE</span>}
             </div>
             <div className="canvas-scroll">
               <DeskCanvas answers={answers} done={done} />
