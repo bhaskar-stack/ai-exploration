@@ -93,7 +93,7 @@ function Composer({ Q, answers, setAnswers, onSingle, onAdvance }: {
             </button>
           ))}
         </div>
-        <button className="btn btn-primary" style={{ marginTop: 10 }} disabled={arr.length === 0} onClick={onAdvance}>Send</button>
+        <button className="btn btn-primary" style={{ marginTop: 10 }} disabled={arr.length === 0} onClick={onAdvance}>Continue</button>
       </>
     );
   }
