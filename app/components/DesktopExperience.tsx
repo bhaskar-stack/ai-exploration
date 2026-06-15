@@ -89,7 +89,7 @@ function Composer({ Q, answers, setAnswers, onSingle, onAdvance }: {
         <div className="chips comp-chips">
           {Q.opts!.map(([v, l]) => (
             <button key={v} className={'chip' + (arr.includes(v) ? ' on' : '')} onClick={() => toggle(v)}>
-              {arr.includes(v) && <span className="ck">✓</span>}{l}
+              {arr.includes(v) && <svg className="ck" width="14" height="14" viewBox="0 0 20 20" fill="none"><path d="M4 10.5L8.5 15L16 6" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/></svg>}{l}
             </button>
           ))}
         </div>
@@ -138,7 +138,7 @@ function DeskAdjust({ answers, setAnswers, onRestart }: {
     return (
       <button key={v} className={'chip' + (on ? ' on' : '')}
         onClick={() => multi ? toggleCountry(v) : setSingle(field!, v)}>
-        {on && <span className="ck">✓</span>}{label}
+        {on && <svg className="ck" width="14" height="14" viewBox="0 0 20 20" fill="none"><path d="M4 10.5L8.5 15L16 6" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/></svg>}{label}
       </button>
     );
   };

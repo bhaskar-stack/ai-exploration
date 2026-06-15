@@ -37,7 +37,7 @@ export default function AdjustSheet({ answers, onApply, onClose }: {
     return (
       <button key={v} className={'chip' + (on ? ' on' : '')}
         onClick={() => multi ? toggleCountry(v) : setSingle(field!, v)}>
-        {on && <span className="ck">✓</span>}
+        {on && <svg className="ck" width="14" height="14" viewBox="0 0 20 20" fill="none"><path d="M4 10.5L8.5 15L16 6" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/></svg>}
         {label}
       </button>
     );
