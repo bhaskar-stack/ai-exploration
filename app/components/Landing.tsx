@@ -20,11 +20,13 @@ export default function Landing({ onStart }: { onStart: () => void }) {
         </div>
         <div className="splash-proof">
           <div className="splash-avatars">
-            <span style={{ background: '#0E7C7B' }}>A</span>
-            <span style={{ background: '#E8920C' }}>R</span>
-            <span style={{ background: '#2a5bb8' }}>S</span>
-            <span style={{ background: '#1B9E5A' }}>P</span>
-            <span style={{ background: '#8B5CF6' }}>M</span>
+            <span style={{ background: '#0E7C7B' }}>B</span>
+            <span style={{ background: '#E8920C' }}>H</span>
+            <span style={{ background: '#2a5bb8' }}>A</span>
+            <span style={{ background: '#1B9E5A' }}>S</span>
+            <span style={{ background: '#8B5CF6' }}>K</span>
+            <span style={{ background: '#D97706' }}>A</span>
+            <span style={{ background: '#6366F1' }}>R</span>
           </div>
           <div className="splash-trust">Trusted by <b>120K+</b> students across India &amp; South Asia</div>
         </div>
