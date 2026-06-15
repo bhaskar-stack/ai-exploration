@@ -26,11 +26,8 @@ export default function Home() {
 
   return (
     <>
-      <ViewToggle mode={desktop ? 'desktop' : 'mobile'} setMode={setOverride} />
-      {desktop
-        ? <DesktopExperience answers={answers} setAnswers={setAnswers} />
-        : <MobileExperience answers={answers} setAnswers={setAnswers} />
-      }
+      {/* <ViewToggle mode={desktop ? 'desktop' : 'mobile'} setMode={setOverride} /> */}
+      <DesktopExperience answers={answers} setAnswers={setAnswers} />
     </>
   );
 }

@@ -39,7 +39,6 @@ function DeskQ1({ onAnswer }: { onAnswer: (v: string) => void }) {
   return (
     <div className="desk-q1">
       <div className="q1-inner">
-        <span className="eyebrow">Question 1 of 6</span>
         <h1 className="q1-h">{Q.q}</h1>
         <p className="q1-sub">We'll tailor every question after this to your answer.</p>
         <div className="q1-opts">
