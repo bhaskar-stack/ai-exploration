@@ -46,7 +46,8 @@ export default function ShortlistView({ r, ctx }: { r: EvalResult; ctx: { phd: b
   ].filter(t => t.items.length > 0);
 
   const [active, setActive] = useState(tabs[0]?.key ?? 'match');
-  const current = tabs.find(t => t.key === active) ?? tabs[0];
+  const effectiveActive = tabs.some(t => t.key === active) ? active : (tabs[0]?.key ?? 'match');
+  const current = tabs.find(t => t.key === effectiveActive) ?? tabs[0];
 
   return (
     <>
@@ -56,7 +57,7 @@ export default function ShortlistView({ r, ctx }: { r: EvalResult; ctx: { phd: b
             {tabs.map(t => (
               <button
                 key={t.key}
-                className={'tab-item' + (active === t.key ? ' active' : '')}
+                className={'tab-item' + (effectiveActive === t.key ? ' active' : '')}
                 onClick={() => setActive(t.key)}
               >
                 {t.label}
